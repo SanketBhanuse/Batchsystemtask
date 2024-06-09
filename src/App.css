@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+ }
+body{
+  background-color: #faf5f5;
 }
+ img {
+   width: 100%;
+   height: auto;
+   display: block;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ /* ======================= */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ :root {
+   --primary_color: #000;
+   --secondary_color: #FF5555;
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ /* =================== */
+ body::-webkit-scrollbar {
+   width: 4px;
+ }
 
-.App-link {
-  color: #61dafb;
-}
+ body::-webkit-scrollbar-track {
+   background: #672C2C1F;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ body::-webkit-scrollbar-thumb {
+   background-color: var(--secondary_color);
+   border-radius: 20px;
+ }
+
+ /* ================== */
+
+ .container {
+   margin: 0 auto;
+   max-width: 1200px; 
+   padding: 40px 0px;
+
+ }
+
+ @media (min-width: 1500px) {
+   .container {
+     max-width: 1500px;
+   }
+ }
+ @media (max-width: 1400px) {
+   .container {
+     max-width: 1200px;
+   }
+ }
+
+ @media (max-width: 767px) {
+   .container {
+     max-width: 90%;
+   }
+
+ }
+
+ /*=======================*/
